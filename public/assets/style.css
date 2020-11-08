@@ -1,0 +1,50 @@
+
+.blog .posts article{
+	width: 32.66%;
+    float: left;
+    margin: 0px 1% 50px 0px;
+}
+.blog .posts article .img-cont{
+	width:100%;
+	height:241px;
+	max-height:241px;
+	margin-bottom:20px;
+}
+.blog .posts article img{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog .posts article .post-title{
+	font-size:1.5em;
+}
+.blog .posts article .excerpt{}
+
+@media screen and (min-width:992px){
+	.blog .posts article:nth-of-type(3n+3){
+		margin-right:0;
+	}
+	.blog .posts article:nth-of-type(3n+1){
+		clear:left;
+	}
+}
+
+@media screen and (max-width:992px){
+	.blog .posts article{
+		width:48.40%;
+	}
+	.blog .posts article:nth-of-type(2n+2){
+		margin-right:0;
+	}
+	.blog .posts article:nth-of-type(2n+1){
+		clear:left;
+	}
+}
+
+@media screen and (max-width:769px){
+	.blog .posts article{
+		width:100%;
+		margin-right:0;
+	}
+}
+
